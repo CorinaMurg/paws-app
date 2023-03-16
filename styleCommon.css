@@ -1,0 +1,30 @@
+/************* GENERAL ******************/
+
+:root {
+	--orange: #ec7703;
+	--orangeHover: #e56717;
+	--paper: hsla(35, 100%, 92%, 1);
+	/* orangeBrownish: #ec7703; */
+	--dark: #333;
+  }
+  
+/* USE AS: var(--lightBlue) */
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	outline: none;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #f0f8fd;
+}
+
+

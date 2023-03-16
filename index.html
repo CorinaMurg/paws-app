@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
@@ -14,47 +14,99 @@
       href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Paws</title>
+    <link rel="stylesheet" href="styleCommon.css" />
+    <link rel="stylesheet" href="styleMainPage.css" />
+    <link rel="stylesheet" href="styleGallery.css" />
+    <link rel="stylesheet" href="styleLogin.css" />
+    <link rel="stylesheet" href="styleFeeds1-Nav.css" />
+    <link rel="stylesheet" href="styleFeeds2-Content.css" />
+    <link rel="stylesheet" href="styleFeeds3-PostModal.css" />
+    <link rel="stylesheet" href="styleFeeds4-Sidebar.css" />
+    <link rel="stylesheet" href="styleFeeds5-DarkMode.css" />
+    <link rel="stylesheet" href="styleFeeds6-WhoToFollow.css" />
+    <link rel="stylesheet" href="styleMediaQueries.css" />
+    
+    <title>Paws: The Social App for Cat Enthusiasts</title>
   </head>
+
   <body>
     <!-- main page -->
     <section class="main-page">
 
-      <!-- left -->
+      <!--------------------------main left -------------------------->
       <section class="left">
         <div class="left-content">
-          <div>
-            <img src="http://placekitten.com/g/400/400" />
-            <h3 class="left-content-heading">See your dreams</h3>
-          </div>
-          <div>
-            
-            <h3 class="left-content-heading">Discover your passions</h3>
-            <img src="http://placekitten.com/g/500/500" />
-          </div>
-          <div>
-            <img src="http://placekitten.com/g/600/600" />
-            <h3 class="left-content-heading">Make friends</h3>
+          <div class="gallery">
+            <img src="images/white-climbing.jpg" class="img white-climbing" />
+            <img src="images/with-butterfly.jpg" class="img with-butterfly" />
+            <img src="images/tiger-prairie.jpg" class="img tiger-prairie" />
+            <img src="images/with-dog-grass.jpg" class="img with-dog-grass" />
+            <img src="images/through-fence.jpg" class="img through-fence" />
+            <img src="images/gray.jpg" class="img gray" />
+            <img src="images/on-porch-flowers.jpg" class="img on-porch-flowers" />
+            <img src="images/grouchy.jpg" class="img grouchy" />
+            <img src="images/centered-fence.jpg" class="img centered-fence" />
           </div>
         </div>
-      </section>
-      <!-- end of left -->
 
-      <!-- right -->
+      </section>
+      <!--------------------------- end of main left ------------------------>
+
+      <!----------------------------main right ------------------------------>
       <section class="right">
-        <section class="middle-content">
+        <div class="right-content">
           <h1>Paws.</h1>
-          <h2>Connecting the World.</h2>
-          <i class="fa fa-paw" aria-hidden="true"></i>
+          <h2>Connecting Cat Enthusiasts.</h2>
+          <div class="paws">
+            <i class="fa fa-paw" aria-hidden="true"></i>
+            <i class="fa fa-paw" aria-hidden="true"></i>
+          </div>
           <button type="button" class="sign-up main-btn">Sign Up</button>
           <button type="button" class="log-in main-btn">Log In</button>
-        </section>
+        </div>
       </section>
-      <!-- end of right -->
+      <!---------------------------- end of main right ----------------------->
+    </section>
+    <!------------------------------- end of main page ------------------------>
 
-      <!-- footer -->
-      <footer class="main-page-footer">
+
+    <!--------------------------------- LOGIN PAGE ---------------------------->
+    <section class="login-page">
+
+      <!------------------------------- login page nav ---------------->
+      <nav class="login-page-nav">
+        <div class="paws">
+          <i class="fas fa-paw"></i>
+          <i class="fas fa-paw"></i>
+        </div>
+      </nav>
+      <!-------------------------------- end of login page nav ------------>
+
+      <!---------------------------------- login -------------------------------->
+      <section class="login">
+        <div class="login-content">
+          <h2>Join Paws</h2>
+
+          <form class="login-form">
+            <input type="text" placeholder="Email" class="login-user-info"/>
+            <input type="password" placeholder="Password" class="login-password"/>
+            <div class="button-div">
+              <button type="button" class="login-form-btn">Sign In</button>
+            </div>
+          </form>
+
+          <footer class="login-footer">
+            <p>Please use the following credentials:</p>
+            <p>welcome@paws.com and connect.</p>
+          </footer>
+
+        </div>
+        
+      </section>
+      <!------------------------------- end of login ------------------------>
+
+      <!-------------------------main footer ---------------------------->
+      <footer class="main-footer">
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Accessibility</a></li>
@@ -64,64 +116,22 @@
           <li><a href="#">&copy; 2023 Paws</a></li>
         </ul>
       </footer>
-      <!-- end of footer -->
-    </section>
-    <!-- end of main page -->
+      <!----------------------- end of footer ----------------------------->
 
-    <!-- login page -->
-    <section class="login-page">
-
-      <!-- login page nav -->
-      <nav class="login-page-nav">
-        <ul>
-          <li class="brand">
-            <a href="#"><i class="fas fa-paw"></i>  Connecting the feline world</a>
-          </li>
-          
-          <li><a href="#">Language: English</a></li>
-        </ul>
-      </nav>
-      <!-- end of login page nav -->
-
-      <!-- login -->
-      <div class="login">
-        <div class="login-content">
-          <h2>Join Paws</h2>
-
-          <form class="login-form">
-            <input type="text" placeholder="Email" class="login-user-info"/>
-            <input type="password" placeholder="Password" class="login-password"/>
-            <div class="signin-row">
-              <button type="button" class="login-form-btn">Sign In</button>
-              <div class="check">
-                <input type="checkbox" class="login-form-checkbox" id="check" />
-                <label for="check">Remember me</label>
-              </div>
-            </div>
-          </form>
-
-        </div>
-
-        <footer class="login-footer">
-          <p>Please use the following credentials:</p>
-          <p>welcome@paws.com and connect.</p>
-        </footer>
-      </div>
-      <!-- end of login -->
-
-      <!-- login modal -->
+      <!-------------------------------- login modal ------------------------>
       <div class="login-modal">
         <i class="fas fa-times"></i>
-        <p>Please use the following credentials: welcome@paws.com and connect.</p>
+        <p>Please use the credentials printed below.</p>
       </div>
-      <!-- end of login modal -->
+      <!------------------------------ end of login modal --------------------->
 
     </section>
-    <!-- end of login page -->
+    <!-------------------------------- end of login page ----------------------->
 
-    <!-- feeds page -->
+
+    <!----------- FEEDS PAGE: A-Feeds Nav, B-Feeds Content, C-Post Modal, D-Sidebar ------------>
     <section class="feeds-page">
-      <!-- feeds nav -->
+      <!---------------------------------A-Feeds Nav --------------------------->
       <nav class="feeds-nav dark-mode-1">
         <div class="icons">
           <a href="#" class="active"><i class="fas fa-home"></i></a>
@@ -137,28 +147,38 @@
             class="search-bar-input dark-mode-2 light-text border"
           />
         </div>
+        <!-- ---------- Dark Mode -------------->
+        <div class="dark-mode">
+          <p class="light-text" id="dark">Dark</p>
+          <div class="toggle">
+            <div class="circle"></div>
+          </div>
+        </div>
+        <!-- ---------- End of Dark Mode ------------->
+
         <div class="user">
           <div class="user-img-wrapper">
-            <img src="images/user1.jpg" />
+            <img src="images/head.jpg" />
           </div>
-          <a href="#" class="user-link light-text">Jane Smith</a>
+          <a href="#" class="user-link light-text">Petunia</a>
           <i class="fas fa-chevron-down"></i>
         </div>
       </nav>
-      <!-- end of feeds nav -->
+      <!---------------------------- end of feeds nav ------------------------>
 
-      <!-- feeds content -->
-      <div class="feeds-content dark-mode-2">
+      <!------------- B-FEEDS CONTENT: 1. header,  2. posts, 3. who-to-follow ----------------->
+      <section class="feeds-content dark-mode-2">
 
+        <!----------------------------- B1. Feeds header --------------------->
         <header class="feeds-header dark-mode-1">
           <div class="header-top border">
             <h4 class="light-text">Home</h4>
-            <i class="far fa-star"></i>
+            <i class="fas fa-paw"></i>
           </div>
 
           <div class="header-post dark-mode-1 border">
             <div class="header-img-wrapper">
-              <img src="images/user1.jpg" />
+              <img src="images/head.jpg" />
             </div>
             <input type="text" placeholder="What's happening?" class="dark-mode-2 light-text border" />
             <i class="far fa-image"></i>
@@ -166,27 +186,27 @@
             <i class="far fa-chart-bar"></i>
           </div>
         </header>
+        <!------------------------- end of feeds header ------------------->
 
-        <div class="posts dark-mode-1">
+        <!---------------------------- B2.Feeds Posts ------------------------->
+        <section class="posts dark-mode-1">
 
           <section class="post border">
             <div class="user-avatar">
-              <img src="images/user2.jpg" />
+              <img src="images/head2.jpg" />
             </div>
 
             <div class="post-content">
               <div class="post-user-info light-text">
-                <h4>Helen Brown</h4>
+                <h4>Pom Pom</h4>
                 <i class="fas fa-check-circle"></i>
-                <span>@helenbrown 15m</span>
+                <span>@pompom 15m</span>
               </div>
-              <p class="post-text light-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates et voluptatibus vel tenetur quos, id omnis sed error
-                fuga necessitatibus.
+              <p class="post-text light-text"> 
+                I know what I'll be watching tonight ... can't wait!
               </p>
               <div class="post-img">
-                <img src="images/post-img-1.jpg" />
+                <img src="images/netflix.jpg" />
               </div>
               <div class="post-icons">
                 <i class="far fa-comment"></i>
@@ -199,21 +219,20 @@
 
           <section class="post border">
             <div class="user-avatar">
-              <img src="images/user3.jpg" />
+              <img src="images/head3.jpg" />
             </div>
             <div class="post-content">
               <div class="post-user-info light-text">
-                <h4>Jane Doe</h4>
+                <h4>Bella M.</h4>
                 <i class="fas fa-check-circle"></i>
-                <span>@janedoe 35m</span>
+                <span>@proudmama 35m</span>
               </div>
               <p class="post-text light-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates et voluptatibus vel tenetur quos, id omnis sed error
-                fuga necessitatibus.
+                I'm so happy Lola's found a friend! Her name is Bess. Happy when she pays us a visit.
+                I can finally have some me-time...
               </p>
               <div class="post-img">
-                <img src="images/post-img-2.jpg" />
+                <img src="images/dog-yellow.jpg" />
               </div>
               <div class="post-icons">
                 <i class="far fa-comment"></i>
@@ -226,21 +245,20 @@
 
           <section class="post border">
             <div class="user-avatar">
-              <img src="images/user4.jpg" />
+              <img src="images/head4.jpg" />
             </div>
             <div class="post-content">
               <div class="post-user-info light-text">
-                <h4>John Thompson</h4>
+                <h4>Tom</h4>
                 <i class="fas fa-check-circle"></i>
-                <span>@johnthompson 56m</span>
+                <span>@tomcat 56m</span>
               </div>
               <p class="post-text light-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates et voluptatibus vel tenetur quos, id omnis sed error
-                fuga necessitatibus.
+                Oh, so many years ago... Hanging out with my mama.
+                
               </p>
               <div class="post-img">
-                <img src="images/post-img-3.jpg" />
+                <img src="images/tom-share.jpg" />
               </div>
               <div class="post-icons">
                 <i class="far fa-comment"></i>
@@ -253,21 +271,20 @@
 
           <section class="post border">
             <div class="user-avatar">
-              <img src="images/user5.jpg" />
+              <img src="images/head5.jpg" />
             </div>
             <div class="post-content">
               <div class="post-user-info light-text">
-                <h4>James Dias</h4>
+                <h4>Whiskers </h4>
                 <i class="fas fa-check-circle"></i>
-                <span>@jamesdias 1h 07m</span>
+                <span>@whiskers 1h 07m</span>
               </div>
               <p class="post-text light-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates et voluptatibus vel tenetur quos, id omnis sed error
-                fuga necessitatibus.
+                Organizing a trip to the savannah. Anyone interested?
+                Paw me by tonight.
               </p>
               <div class="post-img">
-                <img src="images/post-img-4.jpg" />
+                <img src="images/whiskers-share.jpg" />
               </div>
               <div class="post-icons">
                 <i class="far fa-comment"></i>
@@ -280,21 +297,19 @@
 
           <section class="post border">
             <div class="user-avatar">
-              <img src="images/user6.jpg" />
+              <img src="images/head6.jpg" />
             </div>
             <div class="post-content">
               <div class="post-user-info light-text">
-                <h4>Nick Johnson</h4>
+                <h4>Mia Mia</h4>
                 <i class="fas fa-check-circle"></i>
-                <span>@nickjohnson 1h 37m</span>
+                <span>@MiaMia 1h 37m</span>
               </div>
               <p class="post-text light-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates et voluptatibus vel tenetur quos, id omnis sed error
-                fuga necessitatibus.
+                Look who just woke up!
               </p>
               <div class="post-img">
-                <img src="images/post-img-5.jpg" />
+                <img src="images/mia-share.jpg" />
               </div>
               <div class="post-icons">
                 <i class="far fa-comment"></i>
@@ -304,46 +319,48 @@
               </div>
             </div>
           </section>
-        </div>
+        </section>
+        <!---------------------------end of feeds posts ------------------------->
 
-        <section class="follow dark-mode-1">
+        <!------------------------------B3. Who to follow ------------------------->
+        <aside class="follow dark-mode-1">
           <h3 class="follow-heading light-text border">Who to follow</h3>
 
           <section class="follow-user border">
             <div class="follow-user-img">
-              <img src="images/user3.jpg" />
+              <img src="images/tiger.jpg" />
             </div>
             <div class="follow-user-info light-text">
-              <h4>Ann Smith</h4>
-              <p>@annsmith</p>
+              <h4>Violet</h4>
+              <p>@violetpurr</p>
             </div>
             <button type="button" class="follow-btn dark-mode-2">Follow</button>
           </section>
 
           <section class="follow-user border">
             <div class="follow-user-img">
-              <img src="images/user4.jpg" />
+              <img src="images/mouse.jpg" />
             </div>
             <div class="follow-user-info light-text">
-              <h4>Nick Doe</h4>
-              <p>@nickdoe</p>
+              <h4>Koka K</h4>
+              <p>@kokak</p>
             </div>
             <button type="button" class="follow-btn dark-mode-2">Follow</button>
           </section>
 
           <section class="follow-user border">
             <div class="follow-user-img">
-              <img src="images/user5.jpg" />
+              <img src="images/head7.jpg" />
             </div>
             <div class="follow-user-info light-text">
-              <h4>James Black</h4>
-              <p>@jamesblack</p>
+              <h4>Dora</h4>
+              <p>@dora</p>
             </div>
             <button type="button" class="follow-btn dark-mode-2">Follow</button>
           </section>
 
           <section class="follow-link">
-            <a href="#">Show more</a>
+            <a href="#" dark-mode-2>Show more</a>
           </section>
 
           <footer class="follow-footer dark-mode-2">
@@ -356,16 +373,20 @@
             </ul>
           </footer>
 
-        </section>
-      </div>
-      <!-- end of feeds content -->
+        </aside>
+        <!--------------------------end of who to follow ------------------------->
 
+      </section>
+      <!---------------------------- end of feeds content ------------------------>
+
+
+
+      <!---------------------------- C. Post Modal --------------------------------->
       <button type="button" class="post-btn">
-        +<i class="fas fa-feather-alt"></i> Post
+        + <i class="fas fa-paw"></i></i> Post
       </button>
 
-      <!-- post modal -->
-      <div class="modal-wrapper">
+      <section class="modal-wrapper">
         <div class="modal dark-mode-1">
           <div class="modal-header border">
             <i class="fas fa-times"></i>
@@ -373,7 +394,7 @@
           </div>
           <div class="modal-body">
             <div class="modal-img">
-              <img src="images/user1.jpg" />
+              <img src="images/head.jpg" />
             </div>
             <input
               type="text"
@@ -391,11 +412,11 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- end of post modal -->
+      </section>
+      <!------------------------------ end of post modal ---------------------------->
 
-      <!-- sidebar -->
-      <div class="sidebar-wrapper">
+      <!-------------------------------- D. Sidebar --------------------------------->
+      <section class="sidebar-wrapper">
 
         <div class="sidebar dark-mode-1">
           <div class="sidebar-header border">
@@ -405,14 +426,14 @@
 
           <div class="sidebar-user">
             <div class="sidebar-user-img">
-              <img src="images/user1.jpg" />
+              <img src="images/head.jpg" />
             </div>
             <span>+</span>
           </div>
 
           <div class="sidebar-user-info light-text">
-            <h4>Jane Smith</h4>
-            <p>@janesmith</p>
+            <h4>Petunia</h4>
+            <p>@ThePetunia</p>
           </div>
 
           <div class="following light-text">
@@ -442,19 +463,11 @@
             </ul>
           </div>
 
-          <!-- dark mode -->
-          <div class="dark-mode">
-            <p>Dark Mode</p>
-            <div class="toggle">
-              <div class="circle"></div>
-            </div>
-          </div>
-          <!-- end of dark mode -->
         </div>
-      </div>
-      <!-- end of sidebar -->
+      </section>
+      <!----------------------------- end of sidebar ---------------------------->
     </section>
-    <!-- end of feeds page -->
+    <!------------------------------ end of feeds page ---------------------------->
 
     <script src="script.js"></script>
   </body>

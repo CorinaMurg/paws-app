@@ -1,0 +1,89 @@
+
+.follow {
+	position: fixed;
+	top: 8rem;
+	left: 57%;
+	background-color: #fff;
+	width: 35rem;
+}
+
+.follow-heading {
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	font-size: 1.8rem;
+	border-bottom: 0.1rem solid #eee;
+}
+
+.follow-user {
+	display: flex;
+	align-items: center;
+	padding: 1.5rem;
+	border-bottom: 0.1rem solid #eee;
+}
+
+.follow-user-img {
+	width: 6rem;
+	height: 6rem;
+	margin-right: 2rem;
+}
+
+.follow-user-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.follow-user-info h4,
+.follow-user-info p {
+	font-size: 1.6rem;
+	margin-bottom: 0.5rem;
+}
+
+.follow-btn {
+	margin-left: auto;
+	width: 9rem;
+	background-color: #fff;
+	color: var(--orange);
+	padding: 0.7rem 0.5rem;
+	border: 0.15rem solid var(--orange);
+	border-radius: 2rem;
+	font-size: 1.6rem;
+	cursor: pointer;
+}
+
+.follow-link {
+	margin: 2rem 1rem;
+}
+
+/* follow-link div {
+	width: 100%;
+	height: 100%;
+} */
+
+.follow-link a {
+	/* width: 100%;
+	height: 100%; */
+	text-decoration: none;
+	color: var(--orange);
+	font-size: 1.5rem;
+	
+}
+
+.follow-footer {
+	background-color: #f0f8fd;
+}
+
+.follow-footer ul {
+	list-style: none;
+	display: flex;
+	padding: 2rem 0;
+}
+
+.follow-footer a {
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: #868383;
+	margin: 0 0.7rem;
+}
