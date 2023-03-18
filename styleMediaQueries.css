@@ -254,7 +254,7 @@
 	}
 
 	.header-post input {
-		width: 27rem;
+		width: 30rem;
 	}
 
 	.post-text {
@@ -301,20 +301,18 @@
 		font-size: 1.5rem;
 	}
 
-	.header-img-wrapper {
-		display: none;
-	}
-
-	.header-post {
-		justify-content: center;
-	}
-
-	.header-post input {
-		width: 20rem;
-	}
-
 	.post {
 		padding: 1rem;
+	}
+
+	.header-img-wrapper {
+		margin-right: 1rem;
+	}
+
+	.header-img-wrapper {
+		width: 4rem;
+		height: 4rem;
+		margin-right: 1rem;
 	}
 
 	.user-avatar {
