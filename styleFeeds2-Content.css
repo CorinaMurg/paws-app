@@ -96,6 +96,7 @@
 .post {
 	display: flex;
 	padding: 1rem;
+	width: 100%;
 	border-bottom: 0.1rem solid #eee;
 }
 
@@ -140,6 +141,7 @@
 }
 
 .post-text {
+	width: 48rem;
 	font-size: 1.6rem;
 	margin-bottom: 1rem;
 }
