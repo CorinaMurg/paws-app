@@ -330,9 +330,9 @@
 	}
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) { */ 
 	/* login page */
-	.login-page {
+	/* .login-page {
 		grid-template-columns: 2rem 2fr 2rem;
 	}
 
@@ -345,7 +345,7 @@
 	}
 
 	/* news feed page */
-	.icons a {
+	/* .icons a {
 		margin-right: 4rem;
 	}
 
@@ -367,6 +367,6 @@
 
 	.post-btn {
 		left: 60%;
-	}
+	} */ 
 
-}
+/* } */
