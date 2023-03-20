@@ -91,7 +91,7 @@
 	}
 
 	.left-content {
-		width: 95%;
+		width: 90%;
 		margin: auto;
 	}
 	.right-content h2 {
@@ -121,15 +121,13 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		
 	}
 
 	.left-content {
-		width: 50rem;
+		width: 60%;
 		margin-top: 3rem;
 		margin-bottom: 3rem;
 	}
-
 
 	/* login page */
 	.login-page-nav ul {
@@ -150,11 +148,6 @@
 	.right {
 		width: 50%;
 	}
-
-	/* .left-content {
-		width: 90%;
-		
-	} */
 
 	.main-footer ul {
 		flex-wrap: wrap;
