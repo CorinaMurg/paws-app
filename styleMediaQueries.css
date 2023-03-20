@@ -313,6 +313,9 @@
 @media (max-width: 450px) {
 	.icons a {
 		margin-right: 4rem;
+	}y
+
+	.icons i {
 		font-size: 2.2rem;
 	}
 
@@ -330,9 +333,9 @@
 	}
 }
 
-/* @media (max-width: 400px) { */ 
+@media (max-width: 400px) {
 	/* login page */
-	/* .login-page {
+	.login-page {
 		grid-template-columns: 2rem 2fr 2rem;
 	}
 
@@ -345,16 +348,8 @@
 	}
 
 	/* news feed page */
-	/* .icons a {
-		margin-right: 4rem;
-	}
-
 	.icons i {
 		font-size: 2rem;
-	}
-
-	.icons a {
-		margin-right: 4rem;
 	}
 
 	.user {
@@ -367,6 +362,6 @@
 
 	.post-btn {
 		left: 60%;
-	} */ 
+	}
 
-/* } */
+}
